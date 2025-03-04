@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **SSR_WEBAPP** is a **Server-Side Rendered (SSR) web application** built using **Node.js**, **Express.js**, and **EJS templating**. It demonstrates SSR principles, which help improve **SEO, initial load performance, and overall user experience** compared to traditional client-side rendering.
+SSR_WEBAPP is a server-side rendered (SSR) web application built with Node.js, Express.js, and EJS, designed for dynamic content rendering and improved SEO. It features user management with CRUD operations, modular architecture, RESTful API endpoints, and basic security measures. 
 
 This project was developed as part of a **Node.js learning journey** and showcases **dynamic content rendering**, **handling routes in Express.js**, and **managing user data in a local database or file-based storage**.
 
