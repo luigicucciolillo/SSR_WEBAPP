@@ -24,38 +24,6 @@ This project was developed as part of a **Node.js learning journey** and showcas
 
 ---
 
-## Project Structure
-
-```plaintext
-SSR_WEBAPP/
-├── controllers/       # Application logic and business rules
-│   ├── userController.js   # Handles user-related operations
-│   ├── pageController.js   # Manages static and dynamic page rendering
-│
-├── data/              # Stores application data (optional for DB connection)
-│
-├── models/            # Database models (if using a database)
-│
-├── public/            # Static assets (CSS, JS, images, fonts, etc.)
-│
-├── routes/            # Defines application routes
-│   ├── userRoutes.js      # Routes related to users
-│   ├── pageRoutes.js      # Routes for rendering pages
-│
-├── views/             # EJS templates for dynamic rendering
-│   ├── layouts/       # Common layout templates
-│   ├── pages/         # Specific page templates
-│
-├── util/              # Utility functions
-│
-├── app.js             # Main application entry point
-├── package.json       # Project metadata and dependencies
-├── README.md          # Project documentation
-└── .gitignore         # Git ignore file
-```
-
----
-
 ## Technologies Used
 
 - **Node.js** - JavaScript runtime for server-side applications.
@@ -76,24 +44,24 @@ SSR_WEBAPP/
 
 ## API Routes
 
-### 1. User Routes
+### Admin.js
 
-| Method | Endpoint        | Description                |
-|--------|----------------|----------------------------|
-| GET    | `/users`       | Fetches all users         |
-| GET    | `/users/:id`   | Fetches a user by ID      |
-| POST   | `/users`       | Creates a new user        |
-| PUT    | `/users/:id`   | Updates user details      |
-| DELETE | `/users/:id`   | Deletes a user            |
+The admin.js file contains routes for administrative actions in the application, focused on managing products:
 
-### 2. Page Routes
+    /admin/add-product (GET): Displays the form to add a new product.
+    /admin/products (GET): Lists all the products in the store.
+    /admin/add-product (POST): Handles the form submission to add a new product.
 
-| Method | Endpoint        | Description                |
-|--------|----------------|----------------------------|
-| GET    | `/`            | Renders the home page      |
-| GET    | `/about`       | Renders the about page     |
-| GET    | `/contact`     | Renders the contact page   |
+### Shop.js
 
+The file shop.js defines routes for a basic online store. The routes manage user interactions with the shopping experience:
+
+    / - Displays the homepage.
+    /products - Lists all available products.
+    /products/:productId - Displays detailed information for a specific product based on its ID.
+    /cart - Shows the user's shopping cart.
+    /orders - Lists past orders of the user.
+    /checkout - Displays the checkout page for the user to finalize the purchase.
 ---
 
 ## License
